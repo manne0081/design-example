@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+// === Variables === 
+// =================
+:root {
+    // --highlight-color-I: rgb(40, 80, 40);
+    // --highlight-color-I: rgb(86, 65, 109);
+    // --highlight-color-I: rgb(86, 87, 112);
+    // --highlight-color-I: rgb(36, 73, 70);
+    --background-color: rgb(216, 243, 241);    
+    --background-color: rgb(220,220,220);
+    --highlight-color-I: rgb(36, 73, 70);
+    --highlight-color-II: rgb(80, 133, 128);
+
+    --navigation-width: 48px;
+    --quicklinks-width: 240px;
+    --content-width: calc(100% - (var(--navigation-width) + var(--quicklinks-width)));
+
+    --header-height: 48px;
+    --content-height: calc(100% - 48px);
+}
+
+// === GRID-System === 
+// =================== 
+.row {
+    position: relative;
+    // top: 48px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+// === Standards ===
+// =================
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    scrollbar-width: thin;
+    scrollbar-color:  var(--highlight-color-I) var(--highlight-color-II);
+}
+
+html, body {
+    background-color: var(--background-color);
+    height: 100%;
+}

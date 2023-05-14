@@ -1,0 +1,14 @@
+.content-wrapper {
+    position: relative;
+    top: 48px;
+    display: flex;
+    flex-direction: row;
+    height: var(--content-height);
+    
+    .content-box {
+        position: relative;
+        left: 288px;
+        width: var(--content-width);
+        height: 1200px;
+    }
+}

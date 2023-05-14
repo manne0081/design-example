@@ -1,0 +1,90 @@
+.content-wrapper {
+    position: relative;
+    top: 48px;
+    display: flex;
+    flex-direction: row;
+    height: var(--content-height);
+    
+    .content-box {
+        position: relative;
+        left: 288px;
+        width: var(--content-width);
+        
+        .content-header-background {
+            background-color: var(--background-color);
+            position: fixed;
+            height: 100px;
+            width: var(--content-width);
+            z-index: 2;
+            padding: 12px;
+            box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+
+            .content-header-card {
+                background-color: white;
+                height: 100%;
+                border-radius: 8px;
+                border: 1px solid rgb(221, 209, 209);
+                padding: 4px 4px;
+                display: flex;
+
+                .button-back {
+                    background-color: var(--highlight-color-II);
+                    border-radius: 4px;
+                    margin-right: 8px;
+                    width: 20px;
+                    height: 100%;   
+                    text-align: center;
+                    padding-top: 22px;
+                    font-weight: bold;
+                    border: 1px solid rgba(0,0,0,0.2);
+                    cursor: pointer;
+                    color:rgb(221, 209, 209);
+                }
+
+                .button-back:hover {
+                    background-color: var(--highlight-color-I);                    
+                }
+            }
+        }
+
+        .main-content {
+            position: absolute;
+            top: 106px;
+            width: 100%;
+            height: 32px;
+            margin-top: 4px;
+            padding: 8px 12px;
+
+            .main-content-headline {
+                font-size: 1.2em;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(60, 60, 60);
+                margin-bottom: 8px;
+                margin-left: 4px;
+            }
+
+            .main-data-container {
+                margin-bottom: 6px;
+            }
+
+            .my-input {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: .8em;
+                    margin-bottom: 2px;
+                    margin-left: 5px;
+                    color: rgb(52, 52, 52);
+                }
+                input {
+                    margin-right: 52px;
+                    border-radius: 4px;
+                    padding: 2px 3px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<!-- HEADER -->
+<!-- ###### -->
+<app-header></app-header>
+
+<!-- CONTENT-Wrapper -->
+<!-- ############### -->
+<div class="content-wrapper">
+
+    <!-- Navigation -->
+    <!-- ---------- -->
+	<app-navigation></app-navigation>
+
+	<!-- QUICKLINKS -->
+	<!-- ---------- -->
+	<app-quicklinks></app-quicklinks>
+
+	<!-- CONTENT -->
+	<!-- ------- -->
+
+    <div class="content-box" *ngIf="folder">
+
+        <!-- Content Head -->
+        <!-- ------------ -->
+        <div class="content-header-background">
+            <div class="content-header-card">
+                <div class="button-back" (click)="goBack()">
+                    <
+                </div>
+                <div>
+                    {{folder.name}}
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Data -->
+        <!-- ------------ -->
+        <div class="main-content">
+
+            <!-- <p class="main-content-headline">Main-Data</p> -->
+
+            <!-- Row I -->
+            <div class="main-data-container row">
+                <div class="col-3 my-input">
+                    <label for="">Name</label>
+                    <input type="text" value="{{folder.name}}">
+                </div>
+                <div class="col-3 my-input">
+                    <label for="">Street</label>
+                    <input type="text" value="{{folder.street}}">
+                </div>
+                <div class="col-3 my-input">
+                    <label for="">Short Name</label>
+                    <input type="text">
+                </div>
+                <div class="col-3 my-input">
+                    <label for="">Nick Name</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <!-- Row II -->
+            <div class="main-data-container row">
+                <div class="col-3 my-input">
+                    <label for="">Fieldname</label>
+                    <input type="text">
+                </div>
+                <div class="col-3 my-input">
+                    <label for="">Fieldname</label>
+                    <input type="text">
+                </div>
+                <div class="col-3 my-input">
+                    <label for="">Fieldname</label>
+                    <input type="text">
+                </div>
+                <div class="col-3 my-input">
+                    <label for="">Fieldname</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

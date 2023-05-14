@@ -1,27 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
+    selector: 'app-quicklinks',
+    templateUrl: './quicklinks.component.html',
+    styleUrls: ['./quicklinks.component.scss']
 })
 
-export class AppComponent {
-	title: string = 'test';
-	name: string = 'Manuel Schmidt';
-	department: string = 'Vertrieb & Konzeption';
+export class QuicklinksComponent implements OnInit {
 	quicklinks: string[] = ['Team-Members / DEV', 'Team-Members / PM', 'Folder / ABC', 'Project / 0815',
 							// 'Team-Members / DEV', 'Team-Members / PM', 'Folder / ABC', 'Project / 0815',
 							// 'Folder + Project', 'Team-Members / PM', 'Folder / XYZ', 'Project / 4711',
 							// 'Team-Members / DEV', 'Team-Members / PM', 'Folder / ABC', 'Project / 0815',
 							// 'Folder + Project', 'Team-Members / PM', 'Folder / XYZ', 'Project / 4711',
 							// 'Team-Members / DEV', 'Team-Members / PM', 'Folder / ABC', 'Project / 0815',
-							'Folder + Project', 'Team-Members / PM', 'Folder / XYZ', 'Project / 4711'];
-	firstName: string = 'Bärbel';
-	lastName: string = 'Beispiel';
+							'Folder + Project', 'Team-Members / PM', 'Folder / XYZ', 'Project / 4711'
+							];
 
-	printQuicklinks(): void {
-		console.log(this.quicklinks);
+    constructor(
+		private router: Router,
+	) { }
+
+    ngOnInit(): void {
+    }
+
+	openQuicklink1(): void {
+		// let test: string = 'dev';
+		// this.router.navigate(['teamMembers', test]);
 	}
 
 }

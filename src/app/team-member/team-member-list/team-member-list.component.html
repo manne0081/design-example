@@ -1,0 +1,52 @@
+<!-- HEADER -->
+<!-- ###### -->
+<app-header></app-header>
+
+<!-- CONTENT-Wrapper -->
+<!-- ############### -->
+<div class="content-wrapper">
+
+    <!-- Navigation -->
+    <!-- ---------- -->
+	<app-navigation></app-navigation>
+
+	<!-- QUICKLINKS -->
+	<!-- ---------- -->
+	<app-quicklinks></app-quicklinks>
+
+	<!-- CONTENT -->
+	<!-- ------- -->
+
+    <div class="content-box">
+
+		<!-- Content Head -->
+        <!-- ------------ -->
+        <div class="content-header-background">
+            <div class="content-header-card">
+                Searching... / Filter... / Sorting...
+            </div>
+        </div>
+
+        <!-- Content Data -->
+        <!-- ------------ -->
+
+		<div class="main-content">
+
+			<div class="list-card" *ngFor="let teamMember of teamMembers; index as i">
+                <p>{{teamMember.firstName}} {{teamMember.lastName}}</p>
+				ID:{{i}} //
+                isDeveloper: {{teamMember.isDeveloper}}
+
+                <div class="open-item" style=""
+                        (click)="onClick(teamMember)">                    
+                        >                    
+                </div>
+			</div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<!-- ###### -->
+<app-footer></app-footer>
