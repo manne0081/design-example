@@ -27,6 +27,7 @@ export class QuicklinksComponent implements OnInit {
 	openQuicklink1(): void {
 		// let test: string = 'dev';
 		// this.router.navigate(['teamMembers', test]);
+		this.router.navigate(['teamMembers']);
 	}
 
 }

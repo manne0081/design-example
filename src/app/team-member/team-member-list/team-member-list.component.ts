@@ -12,27 +12,28 @@ import { TeamMemberService } from '../team-member.service';
 
 export class TeamMemberListComponent implements OnInit {
 	teamMembers: TeamMember[] = [];
-	teamMembersDev: TeamMember[] = [];
-	teamMembersPM: TeamMember[] = [];
 
-	id: number | undefined;
-	private sub: any;
+	private teamMemberArt: string = 'all';
 
 	constructor(private router: Router,
 				private teamMemberService: TeamMemberService,
 				private route: ActivatedRoute) { }
 
 	ngOnInit(): void {
-
-
-		this.getTeamMembers();
-		this.getTeamMembersDev();
-		this.getTeamMembersPM();
-
-		// this.sub = this.route.params.subscribe(params => {
-		// 	this.id = +params['id'];
-		// })
-
+		if (this.teamMemberArt == 'all') {
+			console.log("Alle...");
+			this.getTeamMembers();
+		} else {
+			if (this.teamMemberArt == 'dev') {
+				console.log("DEV...");
+				this.getTeamMembersDev();
+			} else {
+				if (this.teamMemberArt == 'pm') {
+					console.log("PM...");
+					this.getTeamMembersPM();
+				}
+			}
+		}		 
 	}
 
 	getTeamMembers(): void {
@@ -42,12 +43,12 @@ export class TeamMemberListComponent implements OnInit {
 	
 	getTeamMembersDev(): void {
 		this.teamMemberService.getTeamMembersByArt(true)
-			.subscribe(teamMembers => this.teamMembersDev = teamMembers);
+			.subscribe(teamMembers => this.teamMembers = teamMembers);
 	}
 	
 	getTeamMembersPM(): void {
 		this.teamMemberService.getTeamMembersByArt(false)
-			.subscribe(teamMembers => this.teamMembersPM = teamMembers);
+			.subscribe(teamMembers => this.teamMembers = teamMembers);
 	}
 
 	onClick(teamMember: TeamMember): void {
