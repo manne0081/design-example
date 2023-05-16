@@ -1,26 +1,21 @@
 <!-- QUICKLINKS -->
 <!-- ========== -->
 <div class="quicklinks">
-
-    <div class="quicklink-headline">
-        Quicklinks
-    </div>
+    <div class="quicklink-headline">Quicklinks</div>
 
     <!-- Quicklink -->
     <!-- --------- -->
     <div class="quicklink" *ngFor="let quicklink of quicklinks; index as i">
-
         <div class="quicklink-move">
-            <img src="assets/icons/move-down.svg" alt="">
+            <img src="assets/icons/move-down.svg" alt="" />
         </div>
 
         <div class="quicklink-description">
-            {{quicklink}}
+            {{ quicklink }}
         </div>
 
         <div class="quicklink-edit">
-            <img src="assets/icons/pencil2.svg" alt="">
+            <img src="assets/icons/pencil2.svg" alt="" />
         </div>
-
     </div>
 </div>

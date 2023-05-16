@@ -5,56 +5,49 @@
 <!-- CONTENT-Wrapper -->
 <!-- ############### -->
 <div class="content-wrapper">
-
     <!-- Navigation -->
     <!-- ---------- -->
-	<app-navigation></app-navigation>
+    <app-navigation></app-navigation>
 
-	<!-- QUICKLINKS -->
-	<!-- ---------- -->
-	<app-quicklinks></app-quicklinks>
+    <!-- QUICKLINKS -->
+    <!-- ---------- -->
+    <app-quicklinks></app-quicklinks>
 
-	<!-- CONTENT -->
-	<!-- ------- -->
+    <!-- CONTENT -->
+    <!-- ------- -->
 
     <div class="content-box" *ngIf="teamMember">
-
         <!-- Content Head -->
         <!-- ------------ -->
         <div class="content-header-background">
             <div class="content-header-card">
-                <div class="button-back" (click)="goBack()">
-                    <
-                </div>
-                <div>
-                    {{teamMember.firstName}} {{teamMember.lastName}}
-                </div>
+                <div class="button-back" (click)="goBack()"><</div>
+                <div>{{ teamMember.firstName }} {{ teamMember.lastName }}</div>
             </div>
         </div>
 
         <!-- Content Data -->
         <!-- ------------ -->
         <div class="main-content">
-
             <!-- <p class="main-content-headline">Main-Data</p> -->
 
             <!-- Row I -->
             <div class="main-data-container row">
                 <div class="col-3 my-input">
                     <label for="">First Name</label>
-                    <input type="text" value="{{teamMember.firstName}}">
+                    <input type="text" value="{{ teamMember.firstName }}" />
                 </div>
                 <div class="col-3 my-input">
                     <label for="">Last Name</label>
-                    <input type="text" value="{{teamMember.lastName}}">
+                    <input type="text" value="{{ teamMember.lastName }}" />
                 </div>
                 <div class="col-3 my-input">
                     <label for="">Short Name</label>
-                    <input type="text">
+                    <input type="text" />
                 </div>
                 <div class="col-3 my-input">
                     <label for="">Nick Name</label>
-                    <input type="text">
+                    <input type="text" />
                 </div>
             </div>
 
@@ -62,19 +55,19 @@
             <div class="main-data-container row">
                 <div class="col-3 my-input">
                     <label for="">Fieldname</label>
-                    <input type="text">
+                    <input type="text" />
                 </div>
                 <div class="col-3 my-input">
                     <label for="">Fieldname</label>
-                    <input type="text">
+                    <input type="text" />
                 </div>
                 <div class="col-3 my-input">
                     <label for="">Fieldname</label>
-                    <input type="text">
+                    <input type="text" />
                 </div>
                 <div class="col-3 my-input">
                     <label for="">Fieldname</label>
-                    <input type="text">
+                    <input type="text" />
                 </div>
             </div>
         </div>
