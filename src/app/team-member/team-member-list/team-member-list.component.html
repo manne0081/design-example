@@ -8,18 +8,17 @@
 
     <!-- Navigation -->
     <!-- ---------- -->
-	<app-navigation></app-navigation>
+    <app-navigation></app-navigation>
 
-	<!-- QUICKLINKS -->
-	<!-- ---------- -->
-	<app-quicklinks></app-quicklinks>
+    <!-- QUICKLINKS -->
+    <!-- ---------- -->
+    <app-quicklinks></app-quicklinks>
 
-	<!-- CONTENT -->
-	<!-- ------- -->
+    <!-- CONTENT -->
+    <!-- ------- -->
 
     <div class="content-box">
-
-		<!-- Content Head -->
+        <!-- Content Head -->
         <!-- ------------ -->
         <div class="content-header-background">
             <div class="content-header-card">
@@ -30,19 +29,18 @@
         <!-- Content Data -->
         <!-- ------------ -->
 
-		<div class="main-content">
+        <div class="main-content">
+            <div class="list-card" *ngFor="let teamMember of teamMembers; index as i">
 
-			<div class="list-card" *ngFor="let teamMember of teamMembers; index as i">
-                <p>{{teamMember.firstName}} {{teamMember.lastName}}</p>
-				ID:{{i}} //
-                isDeveloper: {{teamMember.isDeveloper}}
+                <p>{{ teamMember.firstName }} {{ teamMember.lastName }}</p>
 
-                <div class="open-item" style=""
-                        (click)="onClick(teamMember)">                    
-                        >                    
+                ID:{{ i }} // isDeveloper: {{ teamMember.isDeveloper }}
+
+                <div class="open-item" style="" (click)="onClick(teamMember)">
+                    >
                 </div>
-			</div>
-            
+
+            </div>
         </div>
     </div>
 </div>
