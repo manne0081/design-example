@@ -8,21 +8,19 @@
 
     <!-- Quicklink -->
     <!-- --------- -->
-    <div class="quicklink" *ngFor="let quicklink of quicklinks; index as i"
-         (click)="openQuicklink1()">
+    <div class="quicklink" *ngFor="let quicklink of quicklinks; index as i">
 
         <div class="quicklink-move">
             <img src="assets/icons/move-down.svg" alt="">
         </div>
 
         <div class="quicklink-description">
-            {{quicklink}}	
+            {{quicklink}}
         </div>
 
         <div class="quicklink-edit">
             <img src="assets/icons/pencil2.svg" alt="">
         </div>
-
 
     </div>
 </div>
