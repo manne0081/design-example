@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FolderComponent } from './folder/folder.component';
 import { FolderListComponent } from './folder/folder-list/folder-list.component';
+import { ActionsComponent } from './actions/actions.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FolderListComponent } from './folder/folder-list/folder-list.component'
     FooterComponent,
     PageNotFoundComponent,
     FolderComponent,
-    FolderListComponent
+    FolderListComponent,
+    ActionsComponent
   ],
   imports: [
     BrowserModule,

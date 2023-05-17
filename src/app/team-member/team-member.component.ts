@@ -14,12 +14,12 @@ import { TeamMemberService } from './team-member.service';
 export class TeamMemberComponent implements OnInit {
 	teamMember: TeamMember | undefined;
 	idTeamMember: string = "";
-	
+
 	constructor(
 		private route: ActivatedRoute,
 		private location: Location,
 		private teamMemberService: TeamMemberService,
-	) { }
+	) {}
 
 	ngOnInit(): void {
 		this.getTeamMember();
