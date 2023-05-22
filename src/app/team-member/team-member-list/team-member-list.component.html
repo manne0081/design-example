@@ -40,12 +40,16 @@
 
 
                 <div class="list-card-wrapper">
+
                     <div class="selection"><input type="checkbox"></div>
+                    
                     <div class="test-content">
-                        <div class="content-left">content-left</div>
-                        <div class="content-right">content-right</div>
+                        <div class="content-left"><span class="name">{{teamMember.firstName}} {{teamMember.lastName}}</span></div>
+                        <div class="content-right">Resturlaub 18 Tage</div>
                     </div>
-                    <div class="open-item">></div>
+
+                    <div class="open-item" (click)="onClick(teamMember)">></div>
+
                 </div>
 
 
