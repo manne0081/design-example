@@ -32,13 +32,22 @@
         <div class="main-content">
             <div class="list-card" *ngFor="let teamMember of teamMembers; index as i">
 
-                <p>{{ teamMember.firstName }} {{ teamMember.lastName }}</p>
-
+                <!-- <p>{{ teamMember.firstName }} {{ teamMember.lastName }}</p>
                 ID:{{ i }} // isDeveloper: {{ teamMember.isDeveloper }}
-
                 <div class="open-item" style="" (click)="onClick(teamMember)">
                     >
+                </div> -->
+
+
+                <div class="list-card-wrapper">
+                    <div class="selection"><input type="checkbox"></div>
+                    <div class="test-content">
+                        <div class="content-left">content-left</div>
+                        <div class="content-right">content-right</div>
+                    </div>
+                    <div class="open-item">></div>
                 </div>
+
 
             </div>
         </div>
