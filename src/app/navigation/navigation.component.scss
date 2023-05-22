@@ -1,24 +1,48 @@
-.navigation {
+.navigation-background {
     background-color: var(--highlight-color-II);
     min-width: 48px;
     height: 100%;
-    position: fixed;
+    position: fixed;    
+    
+    .navigation {
+        background-color: var(--highlight-color-I-light);
+        min-width: 48px;
+        position: fixed;
 
-    .navigation-item {
-        height: 48px;
-        cursor: pointer;
+        .navigation-item {
+            background-color: var(--highlight-color-II);
+            height: 48px;
+            // cursor: pointer;
 
-        img {
-            height: 32px;
-            width: 32px;
-            margin-top: 8px;
-            margin-left: 8px;
-
+            img {
+                height: 28px;
+                width: 28px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
         }
 
-    }
+        .navigation-item.active {
+            background-color: var(--highlight-color-I-light);
+        }
 
-    .navigation-item:hover {
-        background-color: rgba(255,255,255,0.15);
+        .inactive {
+            background-color: none;
+        }
+
+        .navigation-item.pre-active:first-child {
+            border-radius: 0 0 8px 0;
+        }
+
+        .navigation-item.post-active:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        .navigation-item.inactive:hover {
+            background-color: rgba(255,255,255,0.4);
+            cursor: pointer;
+        }
+
+
     }
 }

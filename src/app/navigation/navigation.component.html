@@ -1,19 +1,17 @@
-<div class="navigation">
+<div class="navigation-background">
+    <div class="navigation">
 
-    <div class="navigation-item first" routerLink="/dashboard">
-        <img class="dashboard" src="assets/icons/dashboard.svg" alt="">
+        <div class="navigation-item inactive pre-active" routerLink="/dashboard">
+            <img class="dashboard" src="assets/icons/dashboard.svg" alt="">
+        </div>
+
+        <div class="navigation-item active" routerLink="/teamMembers">
+            <img class="team-member" src="assets/icons/teamMembers_test.svg" alt="">
+        </div>
+
+        <div class="navigation-item inactive post-active" routerLink="/folders">
+            <img class="folders" src="assets/icons/office.svg" alt="">
+        </div>
+
     </div>
-
-    <div class="navigation-item" routerLink="/teamMembers">
-        <img class="team-member" src="assets/icons/teamMembers.svg" alt="">
-    </div>
-
-    <div class="navigation-item" routerLink="/folders">
-        <img class="folders" src="assets/icons/office.svg" alt="">
-    </div>
-
-    <!-- <div class="navigation-item first" *ngFor="let linkImage of linkImages" routerLink="/dashboard">
-        <img class="dashboard" src="{{linkImage}}" alt="">
-    </div> -->
-
 </div>

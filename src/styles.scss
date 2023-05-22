@@ -1,14 +1,12 @@
 // === Variables === 
 // =================
-:root {
-    // --highlight-color-I: rgb(40, 80, 40);
-    // --highlight-color-I: rgb(86, 65, 109);
-    // --highlight-color-I: rgb(86, 87, 112);
-    // --highlight-color-I: rgb(36, 73, 70);
-    --background-color: rgb(216, 243, 241);    
+:root {   
     --background-color: rgb(220,220,220);
     --highlight-color-I: rgb(36, 73, 70);
     --highlight-color-II: rgb(80, 133, 128);
+    --highlight-color-I: rgb(7, 61, 87);
+    --highlight-color-I-light: rgb(11, 67, 95);
+    --highlight-color-II: rgb(132, 179, 201);
 
     --navigation-width: 48px;
     --quicklinks-width: 240px;
@@ -58,7 +56,7 @@
     box-sizing: border-box;
 
     scrollbar-width: thin;
-    scrollbar-color:  var(--highlight-color-I) var(--highlight-color-II);
+    scrollbar-color:  var(--highlight-color-I-light) var(--highlight-color-II);
 }
 
 html, body {
