@@ -28,7 +28,7 @@
                 display: flex;
 
                 .button-back {
-                    background-color: var(--highlight-color-II);
+                    background-color: var(--highlight-color-I);
                     border-radius: 4px;
                     margin-right: 8px;
                     width: 20px;
@@ -38,11 +38,11 @@
                     font-weight: bold;
                     border: 1px solid rgba(0,0,0,0.2);
                     cursor: pointer;
-                    color:rgb(221, 209, 209);
+                    color: white;
                 }
 
                 .button-back:hover {
-                    background-color: var(--highlight-color-I);
+                    background-color: rgb(29, 98, 133);
                 }
             }
         }

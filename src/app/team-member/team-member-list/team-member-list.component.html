@@ -31,14 +31,12 @@
 
         <div class="main-content">
             <div class="list-card" *ngFor="let teamMember of teamMembers; index as i">
-
                 <div class="list-card-wrapper">
-
                     <div class="selection"><input type="checkbox"></div>
 
                     <div class="test-content">
                         <div class="content-left">
-                            <p><span class="name">PNR {{teamMember.number}} {{teamMember.firstName}} {{teamMember.lastName}}</span></p>
+                            <p><span class="name">PNR {{teamMember.number}} / {{teamMember.firstName}} {{teamMember.lastName}}</span></p>
 
                             <p>
                                 <span class="contact label">E-Mail:</span><span class="contact info">{{teamMember.email}}</span>
@@ -75,12 +73,18 @@
                             </div>
 
                             <!-- todo -->
-                            <div class="info-box status off">
+                            <div class="info-box status on">
                                 <div class="status-box">
 
-                                    <!-- <div class="icon">
-                                        x
-                                    </div> -->
+                                    <div class="text">
+                                        <p class="label">Anwesend</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- <div class="info-box status off">
+                                <div class="status-box">
 
                                     <div class="text">
                                         <p class="label">Abwesend</p>
@@ -88,12 +92,6 @@
                                     </div>
 
                                 </div>
-                            </div>
-
-                            <!-- <div class="info-box status on">
-                                img
-                                <p class="label">Anwesend</p>
-                                <p class="info">08:15:23</p>
                             </div> -->
 
                         </div>
@@ -102,7 +100,6 @@
                     <div class="open-item" (click)="onClick(teamMember)">></div>
 
                 </div>
-
             </div>
         </div>
     </div>
