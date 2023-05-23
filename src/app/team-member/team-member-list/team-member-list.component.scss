@@ -51,7 +51,7 @@
             border-radius: 4px;
             border: 1px solid rgba(0,0,0,0.16);
             border: 1px solid rgba(80, 133, 128, 0.4);
-            min-height: 56px;
+            min-height: 62px;
             margin-bottom: 6px;
             box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
             z-index: 20;
@@ -83,10 +83,26 @@
                         // background-color: orange;
                         flex-grow: 1;
                         padding: 3px 6px;
+                        p {
+                            margin-bottom: 1px;
 
-                        span.name {
-                            color:rgb(40, 40, 40);
-                            font-weight: 600;
+                            span.name {
+                                color:rgb(40, 40, 40);
+                                font-weight: 600;
+                            }
+                            span.contact {
+                                font-size: .85em;
+                            }
+                            span.contact.label {
+                                color:rgb(120, 120, 120);
+                                margin-right: 6px;
+                            }
+                            span.contact.info {
+                                margin-right: 24px;
+                            }
+                            .address {
+                                margin-right: 24px;
+                            }
                         }
                     }
 
@@ -95,7 +111,71 @@
                         flex-grow: 1;
                         justify-content: flex-end;
                         display: flex;
-                        padding: 3px 12px;
+                        padding: 8px 10px;
+
+                        .info-box {
+                            margin-left: 16px;
+                            border-left: 1px solid rgb(200, 200, 200);
+                            padding-left: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100px;
+
+                            .label {
+                                color:rgb(120, 120, 120);
+                            }
+
+                            .info {
+
+                            }
+
+                        }
+
+                        .info-box:last-child {
+                            margin-left: 16px;
+                            margin-right: 4px;
+                        }
+
+                        // todo
+                        .status {
+                            border-radius: 4px;
+                            border: 1px solid rgb(200, 200, 200);
+
+                            .status-box {
+                                // background-color: lime;
+                                display: flex;
+                                position: relative;
+
+                                .icon {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }
+
+                                .label {
+                                    color:rgb(40, 40, 40);
+                                }
+
+                                .info {
+                                    font-size: .8em;
+                                }
+                            }
+
+                        }
+
+                        .status.on {
+                            background-color: rgb(189, 223, 189);
+                        }
+
+                        .status.off {
+                            background-color: rgb(241, 194, 194);
+                        }
+
+
+
+
                     }
                 }
 
@@ -106,7 +186,7 @@
                     position: absolute;
                     height: 100%;
                     right: 0;
-                    padding: 16px 6px;
+                    padding: 21px 6px;
                     border-left: 1px solid rgba(80, 133, 128, 0.4);
                     cursor: pointer;
                 }
