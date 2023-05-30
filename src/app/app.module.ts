@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FolderComponent } from './folder/folder.component';
 import { FolderListComponent } from './folder/folder-list/folder-list.component';
 import { ActionsComponent } from './actions/actions.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ActionsComponent } from './actions/actions.component';
     PageNotFoundComponent,
     FolderComponent,
     FolderListComponent,
-    ActionsComponent
+    ActionsComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

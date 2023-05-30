@@ -10,6 +10,8 @@ import { TeamMemberComponent } from './team-member/team-member.component';
 import { FolderListComponent } from './folder/folder-list/folder-list.component';
 import { FolderComponent } from './folder/folder.component';
 
+import { TestComponent } from './test/test.component';
+
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'dashboard', component: DashboardComponent },
@@ -17,6 +19,9 @@ const routes: Routes = [
 	{ path: 'teamMember/:id', component: TeamMemberComponent },
 	{ path: 'folders', component: FolderListComponent },
 	{ path: 'folder/:id', component: FolderComponent },
+
+	{ path: 'tests', component: TestComponent },
+
 	{ path: '**', component: PageNotFoundComponent },
 ];
 
