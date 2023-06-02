@@ -18,7 +18,6 @@ import { TeamMemberComponent } from './team-member/team-member.component';
 import { TeamMemberListComponent } from './team-member/team-member-list/team-member-list.component';
 import { FolderComponent } from './folder/folder.component';
 import { FolderListComponent } from './folder/folder-list/folder-list.component';
-import { ActionsComponent } from './actions/actions.component';
 import { TestComponent } from './test/test.component';
 
 @NgModule({
