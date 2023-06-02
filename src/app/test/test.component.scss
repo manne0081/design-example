@@ -1,0 +1,206 @@
+.content-wrapper {
+    position: relative;
+    top: 48px;
+    display: flex;
+    flex-direction: row;
+    height: var(--content-height);
+
+    .content-box {
+        position: relative;
+        left: 288px;
+        width: var(--content-width);
+    }
+
+    .content-header-background {
+        background-color: var(--background-color);
+        position: fixed;
+        height: 100px;
+        width: var(--content-width);
+        z-index: 50;
+        padding: 12px;
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+
+        .content-header-card {
+            background-color: white;
+            height: 100%;
+            border-radius: 8px;
+            border: 1px solid rgb(221, 209, 209);
+            padding: 8px 12px;
+        }
+    }
+
+    .main-content {
+        position: absolute;
+        top: 106px;
+        width: 100%;
+        height: 32px;
+        margin-top: 4px;
+        padding: 8px 12px;
+
+        .main-content-headline {
+            font-size: 1.2em;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(60, 60, 60);
+            margin-bottom: 8px;
+            margin-left: 4px;
+        }
+
+        .list-card {
+            background-color: rgb(243, 243, 243);
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.16);
+            border: 1px solid rgba(80, 133, 128, 0.4);
+            min-height: 62px;
+            margin-bottom: 6px;
+            box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+            z-index: 20;
+            position: relative;
+
+            .list-card-wrapper {
+                // background-color: lightblue;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+
+                .selection {
+                    // background-color: lime;
+                    padding: 2px 4px;
+                    border-right: 1px solid rgba(80, 133, 128, 0.4);
+                }
+
+                .test-content {
+                    // background-color: lime;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-right: 16px;
+
+                    .content-left {
+                        // background-color: orange;
+                        flex-grow: 1;
+                        padding: 3px 6px;
+                        p {
+                            margin-bottom: 1px;
+
+                            span.name {
+                                color:rgb(40, 40, 40);
+                                font-weight: 600;
+                            }
+                            span.contact {
+                                font-size: .85em;
+                            }
+                            span.contact.label {
+                                color:rgb(120, 120, 120);
+                                margin-right: 6px;
+                            }
+                            span.contact.info {
+                                margin-right: 24px;
+                            }
+                            .address {
+                                margin-right: 24px;
+                            }
+                        }
+                    }
+
+                    .content-right {
+                        // background-color: lime;
+                        flex-grow: 1;
+                        justify-content: flex-end;
+                        display: flex;
+                        padding: 8px 10px;
+
+                        .info-box {
+                            margin-left: 16px;
+                            border-left: 1px solid rgb(200, 200, 200);
+                            padding-left: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100px;
+
+                            .label {
+                                color:rgb(120, 120, 120);
+                            }
+
+                            .info {
+
+                            }
+                        }
+
+                        .info-box:last-child {
+                            margin-left: 16px;
+                            margin-right: 4px;
+                        }
+
+
+                        // todo
+                        .status {
+                            border: 1px solid rgb(200, 200, 200);
+                            border-radius: 4px;
+                            padding: 0;
+
+                            .status-box {
+                                // background-color: lime;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+
+                                .icon {
+                                    // background-color: lime;
+                                }
+                                .text {
+                                    // margin-left: 8px;
+                                }
+                                .label {
+                                    color:rgb(40, 40, 40);
+                                }
+                                .info {
+                                    font-size: .8em;
+                                }
+                            }
+                        }
+
+                        .status.on {
+                            background-color: lightgreen;
+                        }
+
+                        .status.off {
+                            background-color: lightcoral;
+                        }
+                    }
+                }
+
+                .open-item {
+                    background-color: var(--highlight-color-I);
+                    color: white;
+                    font-weight: bold;
+                    position: absolute;
+                    height: 100%;
+                    right: 0;
+                    padding: 21px 6px;
+                    border-left: 1px solid rgba(80, 133, 128, 0.4);
+                    border-radius: 0 4px 4px 0;
+                }
+
+                .open-item:hover {
+                    background-color: rgb(29, 98, 133);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .list-card:last-of-type {
+            margin-bottom: 76px;
+        }
+
+        .list-card:hover {
+            background-color: rgba(255,255,255,0.9);
+        }
+    }
+}

@@ -2,8 +2,8 @@
     background-color: var(--highlight-color-II);
     min-width: 48px;
     height: 100%;
-    position: fixed;    
-    
+    position: fixed;
+
     .navigation {
         background-color: var(--highlight-color-I-light);
         min-width: 48px;
@@ -24,6 +24,10 @@
 
         .navigation-item.active {
             background-color: var(--highlight-color-I-light);
+        }
+
+        .navigation-item.post-active {
+            border-radius: 0 8px 0 0;
         }
 
         .inactive {
