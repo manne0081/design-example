@@ -21,15 +21,15 @@ export class TeamMemberListComponent implements OnInit {
 
 	ngOnInit(): void {
 		if (this.teamMemberArt == 'all') {
-			console.log("Alle...");
+			// console.log("Alle...");
 			this.getTeamMembers();
 		} else {
 			if (this.teamMemberArt == 'dev') {
-				console.log("DEV...");
+				// console.log("DEV...");
 				this.getTeamMembersDev();
 			} else {
 				if (this.teamMemberArt == 'pm') {
-					console.log("PM...");
+					// console.log("PM...");
 					this.getTeamMembersPM();
 				}
 			}

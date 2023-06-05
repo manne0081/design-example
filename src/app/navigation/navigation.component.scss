@@ -26,11 +26,15 @@
             background-color: var(--highlight-color-I-light);
         }
 
+        .navigation-item.pre-active {
+            border-radius: 0 0 8px 0;
+        }
+
         .navigation-item.post-active {
             border-radius: 0 8px 0 0;
         }
 
-        .inactive {
+        .navigation-item:not(.active) {
             background-color: none;
         }
 
@@ -42,11 +46,20 @@
             border-radius: 0 8px 0 0;
         }
 
-        .navigation-item.inactive:hover {
+        // .navigation-item.inactive:hover {
+        //     background-color: rgba(255,255,255,0.4);
+        //     cursor: pointer;
+        // }
+
+        .navigation-item:not(.active):hover {
             background-color: rgba(255,255,255,0.4);
             cursor: pointer;
         }
 
+        .navigation-item.placeholder:hover {
+            background-color: var(--highlight-color-II);
+            cursor: auto;
+        }
 
     }
 }
