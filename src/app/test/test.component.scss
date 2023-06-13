@@ -58,7 +58,7 @@
             position: relative;
 
             .list-card-wrapper {
-                // background-color: lightblue;
+                background-color: lightblue;
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -66,12 +66,26 @@
                 flex-direction: row;
 
                 .selection {
-                    // background-color: lime;
+                    background-color: lime;
                     padding: 2px 4px;
                     border-right: 1px solid rgba(80, 133, 128, 0.4);
                 }
 
-                
+                .tile-content {
+                    padding: 2px 6px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .left {
+                        background-color: lightsalmon;
+                        
+                    }
+
+                    .right {
+                        background-color: lime;
+                        justify-content: flex-end;
+                    }
+                }                
 
 
 
