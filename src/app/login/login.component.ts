@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 	}
 
 	onClickLogin() {
-		if (this.username == "test" && this.username == "test") {
+		if (this.username == "test" && this.password == "/test$1234/test") {
 			this.route.navigate(['dashboard']);
 		} else {
 			window.alert("Anmeldung fehlgeschlagen!");
