@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -19,6 +20,7 @@ import { TeamMemberListComponent } from './team-member/team-member-list/team-mem
 import { FolderComponent } from './folder/folder.component';
 import { FolderListComponent } from './folder/folder-list/folder-list.component';
 import { TestComponent } from './test/test.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,11 +37,13 @@ import { TestComponent } from './test/test.component';
     FolderComponent,
     FolderListComponent,
     ActionsComponent,
-    TestComponent
+    TestComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
