@@ -60,14 +60,38 @@
                 flex-direction: row;
                 justify-content: space-between;
 
-                .card-content-left > span {
-                    margin-left: 6px;
-                    background-color: lime;
+                .card-content-left {
+                    margin-right: 24px;
+
+
                 }
 
-                .card-content-right > span {
-                    margin-right: 6px;
-                    background-color: orange;
+                span {
+                    margin-left: 6px;
+                }
+
+                .teamMember-number {
+                    font-weight: bold;
+                }
+
+                .teamMember-email span {
+                    font-size: 0.9em;
+
+                }
+                
+                .label {
+                    color: #808080;
+                }
+                
+
+
+                .card-content-right {
+                    margin-left: 24px;
+
+                    span {
+                        // background-color: orange;
+                        margin-right: 6px;
+                    }
                 }
                 
             }

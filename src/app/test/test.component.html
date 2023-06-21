@@ -39,12 +39,17 @@
 
                 <div class="card-content-wrapper">
                     <div class="card-content-left">
-                        <span>{{teamMember.number }}</span>
-                        <span>{{teamMember.firstName }}</span>
-                        <span>{{teamMember.lastName}}</span>
-                        <br>
-                        <span>E-Mail:</span>
-                        <span>{{ teamMember.email}}</span>
+
+                        <div class="teamMember-number">
+                            <span>{{teamMember.number}}</span>
+                            <span>{{teamMember.firstName}}</span>
+                            <span>{{teamMember.lastName}}</span>
+                        </div>
+                        <div class="teamMember-email">
+                            <span class="label">E-Mail:</span>
+                            <span class="value">{{teamMember.email}}</span>
+                        </div>
+
                     </div>
                     <div class="card-content-right">
                         <span>card-content right</span>
