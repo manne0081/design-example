@@ -60,22 +60,35 @@
                 flex-direction: row;
                 justify-content: space-between;
 
-                .card-content {
-                    margin: 4px 4px;
+                .card-content-left > span {
+                    margin-left: 6px;
+                    background-color: lime;
                 }
+
+                .card-content-right > span {
+                    margin-right: 6px;
+                    background-color: orange;
+                }
+                
             }
 
             .card-open {
                 background-color: rgb(29, 98, 133);
                 margin-left: auto;
                 border-left: 1px solid rgba(0,0,0,0.1);
-                padding: 3px 4px 3px 4px;
-                margin-top: 3px;
-                margin-right: 3px;
-                margin-bottom: 3px;
+                padding: 2px 2px 2px 2px;
+                margin-top: 2px;
+                margin-right: 2px;
+                margin-bottom: 2px;
                 border-radius: 4px;
 
-                color: white;
+                display: flex;
+                justify-content: center;
+
+                span {
+                    color: white;
+                }
+                
             }
 
             .card-open:hover {
