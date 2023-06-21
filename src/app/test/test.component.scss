@@ -30,83 +30,58 @@
     }
 
     .main-content {
+        //background-color: orange;
         position: absolute;
         top: 106px;
         width: 100%;
-        height: 32px;
         margin-top: 4px;
         padding: 8px 12px;
 
-        .main-content-headline {
-            font-size: 1.2em;
-            font-weight: bold;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: rgb(60, 60, 60);
-            margin-bottom: 8px;
-            margin-left: 4px;
-        }
-
         .list-card {
             background-color: rgb(243, 243, 243);
+            margin-bottom: 8px;
+            border: 1px solid rgba(0,0,0,0.2);
             border-radius: 4px;
-            border: 1px solid rgba(0,0,0,0.16);
-            border: 1px solid rgba(80, 133, 128, 0.4);
-            min-height: 32px;
-            margin-bottom: 6px;
-            box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
-            z-index: 20;
-            position: relative;
+            min-height: 28px;
+            display: flex;
+            flex-direction: row;            
 
-            .list-card-wrapper {
-                background-color: lightblue;
-                position: absolute;
+            .card-select {
+                //background-color: lime;
+                padding: 3px 4px 3px 4px;
+                border-right: 1px solid rgba(0,0,0,0.2);
+            }
+
+            .card-content-wrapper {
+                //background-color: lightcoral;
                 width: 100%;
-                height: 100%;
+                padding: 4px;
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
 
-                .selection {
-                    background-color: lime;
-                    padding: 2px 4px;
-                    border-right: 1px solid rgba(80, 133, 128, 0.4);
-                }
-
-                .tile-content {
-                    padding: 2px 6px;
-                    display: flex;
-                    justify-content: space-between;
-                    
-                    .left {
-                        background-color: lightsalmon;
-                        
-                    }
-
-                    .right {
-                        background-color: lime;
-                        justify-content: flex-end;
-                    }
-                }                
-
-
-
-                .open-item {
-                    background-color: var(--highlight-color-I);
-                    color: white;
-                    font-weight: bold;
-                    position: absolute;
-                    height: 100%;
-                    right: 0;
-                    padding: 21px 6px;
-                    border-left: 1px solid rgba(80, 133, 128, 0.4);
-                    border-radius: 0 4px 4px 0;
-                }
-
-                .open-item:hover {
-                    background-color: rgb(29, 98, 133);
-                    color: white;
-                    cursor: pointer;
+                .card-content {
+                    margin: 4px 4px;
                 }
             }
+
+            .card-open {
+                background-color: rgb(29, 98, 133);
+                margin-left: auto;
+                border-left: 1px solid rgba(0,0,0,0.1);
+                padding: 3px 4px 3px 4px;
+                margin-top: 3px;
+                margin-right: 3px;
+                margin-bottom: 3px;
+                border-radius: 4px;
+
+                color: white;
+            }
+
+            .card-open:hover {
+                cursor: pointer;
+            }
+
         }
 
         .list-card:last-of-type {
